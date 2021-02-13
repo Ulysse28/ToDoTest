@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Liste d'items de la todo list-->
+
+    <ListView
+        android:id="@+id/list_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btn_items" />
+
+    <!--Zone d'édition de texte-->
+
+    <EditText
+        android:id="@+id/edit_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_items"
+        android:hint="Entre un nouvel objectif !"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btn_items"
+        android:layout_toStartOf="@+id/btn_items"
+        android:layout_alignParentBottom="true" />
+
+    <!--Boutton pour ajouter un item/objectif-->
+
+    <Button
+        android:id="@+id/btn_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="AddItem"
+
+        />
+
+
+
+
+</RelativeLayout>
